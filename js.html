@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* for(var i = 1; i <= 100; i++){
+            console.log("你好吗？");
+        } */
+        /*   var num = prompt("请输入要打印小星星的个数");
+          var str = '';
+          for(var i = 1; i <= num; i++){
+              str = str + '*';
+              
+          }
+          console.log(str); */
+        /*  var num1 = prompt("请输入行");
+         var num2 = prompt("请输入列");
+         var str = '';
+         for(var i = 1; i <= num1; i++){
+             for(var j = 1; j <= num2; j++){
+                 str = str + '#';
+             }
+             str = str + '\n';
+ 
+         }
+         console.log(str); */
+        /* var str = '';
+        for(var i = 1; i <= 10; i++){
+            for(j = 10-i;  j <10; j++){
+                str = str + '@';
+            }
+            str = str +'\n';
+        }
+        console.log(str); */
+        /*   var str = '';
+          for (var i = 1; i <= 9; i++) {
+              for (var j = 1; j <= i; j++) {
+                  str += j + '*' + i + '=' + i * j + '\t';
+              }
+              str = str + '\n';
+  
+          }
+          console.log(str); */
+        /*   var message = prompt('你爱我吗？');
+          while(message !== '我爱你'){
+              var message = prompt('你爱我吗？');
+          }
+          alert('我也爱你！！！'); */
+        /*  var age = 1;
+         do{
+             console.log('您的年龄是：' + age);
+             age ++;
+         }while(age<=100) */
+        /* for(var i = 1; i <=5;i++){
+            if(i ==3){
+                continue;
+            }
+            console.log('你是第'+i+'个傻逼');
+        } */
+        /*  var arr = [1, 5, 8, 48, 4, 43, 64, 6, 4, 697461, 4];
+         for (var i = 0; i <=arr.length - 1; i++) {
+             for (var j = 0; j <= arr.length - i - 1; j++) {
+                 if (arr[j] > arr[j + 1]) {
+                     var temp = arr[j];
+                     arr[j] = arr[j + 1];
+                     arr[j + 1] = temp;
+                 }
+             }
+         }
+         console.log(arr); */
+        /*  function sort(arr) {
+             for (var i = 0; i < arr.length - 1; i++) {
+                 for (j = 0; j < arr.length - i - 1; j++) {
+                     if (arr[j] > arr[j + 1]) {
+                         var temp = arr[j];
+                         arr[j] = arr[j + 1];
+                         arr[j + 1] = temp;
+                     }
+                 }
+ 
+             }
+             return arr;
+ 
+         }
+         var arr1 = sort([1, 5, 8, 8, 184, 61, 6484, 1, 41, 3, 164, 1, 8, 461, 8461, 35,]);
+         console.log(arr1); */
+        /*   function reserve(arr){
+              var newarr = [];
+              for(var i = 0; i < arr.length;i++){
+                  newarr[newarr.length] = arr[arr.length-1-i]; 
+              }
+              return newarr;
+          }
+          var arr1 = reserve([54,1515,15,15,1561,3,16,31,4,1,14,1]);
+          console.log(arr1); */
+        // var str = 'sahdgicbbka';
+        // console.log(str.indexOf('g'));
+        // console.log(str.charAt(5));
+        var day = new Date();
+        console.log(day);
+        var y = day.getFullYear();
+        var m = day.getMonth() + 1;
+        m = m < 10 ? '0' + m : m;
+        var d = day.getDate();
+        d = d < 10 ? '0' + d : d;
+        var days = day.getDay();
+        console.log(y+'年'+m+'月'+d+'日'+'星期'+days);
+
+    </script>
+    <style>
+        /* .box{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+         
+        }
+        .yi{
+            background-color: aqua;
+            left: 50px;
+            top: 50px;
+        }
+        .er{
+            background-color: blanchedalmond;
+            left: 75px;
+            top: 75px;
+            z-index: 1;
+        }
+        .san{
+            background-color: blue;
+        } */
+        .nav {
+            margin: 0 auto;
+            background-color: blue;
+            width: 1200px;
+            height: 2000px;
+        }
+
+        .demo {
+            position: sticky;
+            width: 50px;
+            height: 150px;
+            top: 0px;
+            margin-left: 600px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!--  <div class="box yi"></div>
+    <div class="box er"></div>
+    <div class="box san"></div> -->
+    <div class="nav">
+        1500像素
+        <div class="demo">陈柯霖</div>
+
+    </div>
+
+</body>
+
+</html>
